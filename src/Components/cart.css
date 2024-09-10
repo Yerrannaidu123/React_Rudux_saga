@@ -1,0 +1,57 @@
+/* cart.css */
+
+.cart-container {
+    padding: 20px; /* Add padding around the container */
+  }
+  .cart-grid {
+    display: flex; /* Use flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: flex-start; /* Align items to the start of the row */
+    gap: 10px; /* Add spacing between items */
+  }
+  
+  .cart-item {
+    background-color: white; /* Light background for each cart item */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 10px; /* Padding inside each cart item */
+    max-width: calc(25% - 10px); /* Limit the width to 25% minus the gap */
+    flex: 1 1 calc(25% - 10px); /* Allow items to grow and shrink, ensuring 4 items per row */
+    text-align: center; /* Center the text */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .cart-item img {
+    max-width: 100%; /* Ensure the image fits within the card */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+    /* mix-blend-mode: color-burn; */
+  }
+  
+  .cart-item-details {
+    margin-top: 10px; /* Space between image and details */
+  }
+  
+  .cart-item-details h5,
+  .cart-item-details h6 {
+    margin: 5px 0; /* Add vertical spacing for titles */
+  }
+  
+  .cart-item-actions {
+    margin-top: 10px; /* Space between details and actions */
+  }
+  
+  .cart-item-actions {
+    margin: 0 5px; /* Add spacing between buttons */
+    padding: 10px 15px; /* Add padding for buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* Text color for buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .cart-item-actions:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }

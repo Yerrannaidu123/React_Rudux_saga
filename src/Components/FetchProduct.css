@@ -1,0 +1,17 @@
+.text{
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(9, 10, 10);
+}
+#addToCart{
+    padding:7px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    width:100px;
+    align-items: center;
+}
+#addToCart:focus{
+    background-color: #08011e; 
+    color: white;
+}
