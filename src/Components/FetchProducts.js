@@ -68,8 +68,7 @@ function FetchProduct() {
         <div className="row">
           <div className="col-sm-6 mb-3 mb-sm-0">
             <div className="card m-3" style={{ border: "1px white" }}>
-              <div className="card-body">
-                <h3>id of the product {productId}</h3>
+              <div className="card-body " id="image-body">
                 <img
                   className="m-3"
                   style={{ height: "400px", width: "300px" }}

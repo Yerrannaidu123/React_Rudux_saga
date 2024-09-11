@@ -16,7 +16,7 @@ const SearchData = () => {
   const showData = () => {
     const filter = searchParams.get("filter");
     console.log("Filter Value:", filter);
-    if (filter === "mens") {
+    if (filter === "mens"||"mens clothing"||"shirts") {
       return (
         <div>
           {/* <h2>Men's Clothing</h2>

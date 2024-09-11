@@ -32,7 +32,7 @@ function Header() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark m-4">
         <div className="container-fluid">
-          <Link
+          {/* <Link
             style={{ fontWeight: "bold" }}
             className="navbar-brand"
             to="/login"
@@ -45,7 +45,7 @@ function Header() {
             to="/postData"
           >
             postData
-          </Link>
+          </Link> */}
           <Link style={{ fontWeight: "bold" }} className="navbar-brand" to="/">
             MyShop
           </Link>
