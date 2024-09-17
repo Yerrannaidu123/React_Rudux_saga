@@ -30,7 +30,7 @@ function Header() {
   }, [location.pathname, setSearchQuery]);
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark m-4">
+      <nav className="navbar navbar-expand-lg  m-4">
         <div className="container-fluid">
           {/* <Link
             style={{ fontWeight: "bold" }}
