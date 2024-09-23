@@ -4,7 +4,7 @@
     text-overflow: ellipsis;
     color: rgb(1, 1, 29);
 }
-.container1{
+.parent{
     background-color: black;
     border-radius: 5px;
     margin: 20px;

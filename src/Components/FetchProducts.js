@@ -60,6 +60,36 @@ function FetchProduct() {
     };
   }, [productId]);
 
+  // useEffect(() => {
+  //   // const buttonId = document.getElementById("addToCart");
+
+  //   const observer = new MutationObserver((mutations) => {
+  //     mutations.forEach((mutation) => {
+  //       console.log(mutation);
+  //     });
+  //   });
+
+  //   const observerConfig = {
+  //     childList: true,
+  //     attributes: true,
+  //     attributeOldValue: true,
+  //     subtree: true,
+  //   };
+
+  //   if (buttonRef.current) {
+  //     observer.observe(buttonRef.current, observerConfig);
+  //   }
+  // }, []);
+
+  // const handleButtonClick = () => {
+  //   handleAddToCart(); // Add product to cart
+  //   if (buttonRef.current) {
+  //     const buttonClicked = (buttonRef.current.textContent = "added"); // Remove button from DOM
+  //     console.log(buttonClicked);
+  //   }
+  // };
+   
+
   return (
     <div>
       {Object.keys(selected).length === 0 ? (
@@ -86,7 +116,10 @@ function FetchProduct() {
                   <h2>$ {price}</h2>
                 </div>
                 <h6 className="card-text text">{description}</h6>
-                <button id="addToCart" onClick={handleAddToCart}>
+                <button
+                  id="addToCart"
+                  onClick={handleAddToCart}
+                >
                   <span className="material-symbols-outlined">
                     add_shopping_cart
                   </span>

@@ -4,6 +4,7 @@ import {
   REMOVE_PRODUCTS,
   SELECTED_PRODUCTS,
   SET_PRODUCTS,
+  ADD_NEW_PRODUCT,
 } from "../Action-Types/Action-types";
 
 export const FetchingProducts = () => ({
@@ -15,12 +16,12 @@ export const setProducts = (products) => {
     payload: products,
   };
 };
-export const DetailedProduct=(productId)=>{
-  return{
-    type:DETAILED_PRODUCT,
-    payload:productId,
-  }
-}
+export const DetailedProduct = (productId) => {
+  return {
+    type: DETAILED_PRODUCT,
+    payload: productId,
+  };
+};
 export const selectedProducts = (product) => {
   return {
     type: SELECTED_PRODUCTS,
@@ -32,3 +33,8 @@ export const removeSelectedProducts = () => {
     type: REMOVE_PRODUCTS,
   };
 };
+
+export const addNewProduct = (product) => ({
+  type: ADD_NEW_PRODUCT,
+  payload: product,
+});

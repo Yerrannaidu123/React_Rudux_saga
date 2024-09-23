@@ -5,3 +5,4 @@ export const SELECTED_PRODUCTS = " SELECTED_PRODUCT";
 export const REMOVE_PRODUCTS = " REMOVE_PRODUCT";
 export const ADD_TO_CART = "ADD_TO_CART";
 export const REMOVE_FROM_CART = "REMOVE_FROM_CART";
+export const ADD_NEW_PRODUCT = 'ADD_NEW_PRODUCT';
