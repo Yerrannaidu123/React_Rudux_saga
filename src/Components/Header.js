@@ -80,6 +80,7 @@ function Header() {
                 type="search"
                 value={searchQuery}
                 placeholder="Search"
+                name="searchType"
                 aria-label="Search"
               />
               <button
